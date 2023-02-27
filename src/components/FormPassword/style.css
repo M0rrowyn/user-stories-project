@@ -1,0 +1,14 @@
+.form-password-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.form-password {
+  padding-right: 44px;
+}
+
+.show-eye {
+  position: absolute;
+  top: 22px;
+  right: 16px;
+}
