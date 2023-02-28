@@ -9,7 +9,7 @@ const LoginForm = () => {
     <img src={LogoIcon} className="login-form-logo" alt="Logo"></img>
   );
   const Button = <button className="login-form-button">Login</button>;
-  
+
   const Form = (
     <form className="login-form">
       {Logo}

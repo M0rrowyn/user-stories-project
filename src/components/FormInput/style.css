@@ -5,6 +5,11 @@
   border: 1px solid #D9D9D9;
   outline: none;
   transition: border 0.15s ease-in-out;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .form-input:focus {

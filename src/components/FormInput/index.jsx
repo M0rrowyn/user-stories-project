@@ -9,7 +9,7 @@ const FormInput = (props) => {
   if (props.class) {
     className += ` ${props.class}`;
   }
-  
+
   const Input = (
     <input type={type} className={className} placeholder={placeholder} />
   );

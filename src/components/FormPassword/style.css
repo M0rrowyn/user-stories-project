@@ -7,8 +7,11 @@
   padding-right: 44px;
 }
 
-.show-eye {
+.show-eye,
+.hide-eye {
   position: absolute;
-  top: 22px;
+  top: 16px;
   right: 16px;
+  color: #44B26F;
+  font-size: 30px;
 }

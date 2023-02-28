@@ -8,7 +8,7 @@
   width: 100%;
   max-width: 500px;
   background-color: #F5F5F5;
-  padding: 24px 40px;
+  padding: 84px 112px 212px;
   margin: 0 8px;
 }
 
@@ -22,6 +22,8 @@
   padding: 12px;
   background-color: #44B26F;
   border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
