@@ -4,11 +4,10 @@
 }
 
 .form-password {
-  padding-right: 44px;
+  padding-right: 54px;
 }
 
-.show-eye,
-.hide-eye {
+.password-eye {
   position: absolute;
   top: 16px;
   right: 16px;
