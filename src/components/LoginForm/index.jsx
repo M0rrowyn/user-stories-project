@@ -1,21 +1,16 @@
 import React from "react";
 import "./style.css";
-import LogoIcon from "../../login-icon.svg";
+import LogoIcon from "../../assets/images/logo/login-icon.svg";
 import FormInput from "../FormInput";
 import FormPassword from "../FormPassword";
 
 const LoginForm = () => {
-  const Logo = (
-    <img src={LogoIcon} className="login-form-logo" alt="Logo"></img>
-  );
-  const Button = <button className="login-form-button">Login</button>;
-
   const Form = (
     <form className="login-form">
-      {Logo}
+      <img src={LogoIcon} className="login-form-logo" alt="Logo"></img>
       <FormInput placeholder="User Name" />
       <FormPassword placeholder="Password" />
-      {Button}
+      <button className="login-form-button">Login</button>
     </form>
   );
 

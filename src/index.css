@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Inter", sans-serif;
   src: local("Inter-Regular"),
-    url("./fonts/Inter-Regular.ttf") format("truetype");
+    url("./assets/fonts/Inter-Regular.ttf") format("truetype");
   font-weight: regular;
 }
 

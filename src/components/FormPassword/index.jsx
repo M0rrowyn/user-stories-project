@@ -4,17 +4,20 @@ import { BsEyeSlashFill, BsEye } from "react-icons/bs";
 import FormInput from "../FormInput";
 
 const FormPassword = (props) => {
-  const [type, setType] = useState("password");
+  const [isPasswordOpen, setPasswordOpen] = useState(false);
+  const togglePasswordOpen = () => setPasswordOpen(!isPasswordOpen);
+  
   const eyeIcon =
-    type === "password" 
-    ? <BsEyeSlashFill onClick={() => setType("text")} className="password-eye" />
-    : <BsEye onClick={() => setType("password")} className="password-eye" />
+    isPasswordOpen
+    ? <BsEye onClick={togglePasswordOpen} className="password-eye" />
+    : <BsEyeSlashFill onClick={togglePasswordOpen} className="password-eye" />
+    
 
   const FormPassword = (
     <div className="form-password-wrapper">
       <FormInput
         class="form-password"
-        type={type}
+        type={isPasswordOpen ? "text" : "password"}
         placeholder={props.placeholder}
       />
       {eyeIcon}
