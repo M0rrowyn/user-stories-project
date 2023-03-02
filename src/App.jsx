@@ -1,5 +1,5 @@
-import './App.css';
-import LoginPage from './container/LoginPage';
+import "./App.css";
+import LoginPage from "./container/LoginPage";
 
 function App() {
   return (
