@@ -24,7 +24,7 @@ const rows = [
 const ProductsTable = () => {
   const SortButton = (
     <button className="products-table-sort-button">
-      <img src={ArrowsIcon}></img>
+      <img src={ArrowsIcon} alt="Arrows"></img>
     </button>
   );
 
@@ -83,10 +83,10 @@ const ProductsTable = () => {
                 <TableCell>{row.price}</TableCell>
                 <TableCell>
                   <button className="product-table-cell-button">
-                    <img src={PencilIcon}></img>
+                    <img src={PencilIcon} alt="Pencil"></img>
                   </button>
                   <button className="product-table-cell-button">
-                    <img src={TrashCanIcon}></img>
+                    <img src={TrashCanIcon} alt="Trashcan"></img>
                   </button>
                 </TableCell>
               </TableRow>

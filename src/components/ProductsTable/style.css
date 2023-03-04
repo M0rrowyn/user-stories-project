@@ -26,6 +26,15 @@
   align-items: center;
 }
 
+.product-table-cell-wrapper span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5a5757;
+}
+
 .products-table-sort-button {
   background: inherit;
   border: none;
