@@ -1,0 +1,40 @@
+.products-table-title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 74px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #FFFFFF;
+}
+
+.products-table-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.product-table-cell-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.products-table-sort-button {
+  background: inherit;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.product-table-cell-button {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}

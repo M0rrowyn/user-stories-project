@@ -1,10 +1,11 @@
 import React from "react";
 import "./style.css";
 
-const AdminTableButton = () => {
-  <button className="admin-table-button"></button>;
-
-  return AdminTableButton;
-};
+const AdminTableButton = (props) => (
+  <button className="admin-button">
+    {props.image}
+    {props.text}
+  </button>
+);
 
 export default AdminTableButton;

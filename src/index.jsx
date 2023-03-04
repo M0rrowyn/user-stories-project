@@ -3,10 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import "./assets/fonts/Inter-Regular.ttf";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AdminTable from "./container/AdminTable";
 
 const router = createBrowserRouter([
@@ -15,7 +12,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "admintable",
+    path: "admin-table",
     element: <AdminTable />,
   },
 ]);
