@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -10,6 +10,7 @@ import Paper from "@mui/material/Paper";
 import ArrowsIcon from "../../assets/images/admin-table/arrows.svg";
 import PencilIcon from "../../assets/images/admin-table/pencil.svg";
 import TrashCanIcon from "../../assets/images/admin-table/trash-can.svg";
+import ConfirmNotification from "../../components/ConfirmNotification";
 
 function createData(id, category, name, quantity, price) {
   return { id, category, name, quantity, price };
@@ -22,6 +23,8 @@ const rows = [
 ];
 
 const ProductsTable = () => {
+  const [isDeleteModalOpen, setisDeleteModalOpen] = useState(false);
+
   const SortButton = (
     <button className="products-table-sort-button">
       <img src={ArrowsIcon} alt="Arrows"></img>
@@ -85,7 +88,10 @@ const ProductsTable = () => {
                   <button className="product-table-cell-button">
                     <img src={PencilIcon} alt="Pencil"></img>
                   </button>
-                  <button className="product-table-cell-button">
+                  <button
+                    className="product-table-cell-button"
+                    onClick={() => setisDeleteModalOpen(true)}
+                  >
                     <img src={TrashCanIcon} alt="Trashcan"></img>
                   </button>
                 </TableCell>
@@ -94,6 +100,10 @@ const ProductsTable = () => {
           </TableBody>
         </Table>
       </TableContainer>
+      <ConfirmNotification
+        isOpen={isDeleteModalOpen}
+        setIsOpen={setisDeleteModalOpen}
+      />
     </div>
   );
 };
