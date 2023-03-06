@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./style.css";
 import { BsEyeSlashFill, BsEye } from "react-icons/bs";
-import FormInput from "../FormInput";
+import LoginFormInput from "../LoginFormInput";
 
-const FormPassword = (props) => {
+const LoginFormPassword = (props) => {
   const [isPasswordOpen, setPasswordOpen] = useState(false);
   const togglePasswordOpen = () => setPasswordOpen(!isPasswordOpen);
   
@@ -15,7 +15,7 @@ const FormPassword = (props) => {
 
   const FormPassword = (
     <div className="form-password-wrapper">
-      <FormInput
+      <LoginFormInput
         class="form-password"
         type={isPasswordOpen ? "text" : "password"}
         placeholder={props.placeholder}
@@ -27,4 +27,4 @@ const FormPassword = (props) => {
   return FormPassword;
 };
 
-export default FormPassword;
+export default LoginFormPassword;
