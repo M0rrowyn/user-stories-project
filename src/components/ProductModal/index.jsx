@@ -12,8 +12,6 @@ import FormInput from "../FormInput";
 import FormTextarea from "../FormTextarea";
 
 const ProductModal = (props) => {
-  const ClearIcon = () => <MdClear className="product-modal-clear-icon" />;
-
   return (
     <Dialog
       fullWidth={true}
@@ -23,13 +21,27 @@ const ProductModal = (props) => {
       open={props.isOpen}
     >
       <DialogTitle>
-        <div className="product-modal-title">{props.title}{ClearIcon}</div>
+        <div className="product-modal-title">
+          {props.title}
+          <MdClear
+            className="product-modal-clear-icon"
+            onClick={() => props.setIsOpen(false)}
+          />
+        </div>
       </DialogTitle>
       <DialogContent className="product-modal-form">
         <form id="form" action="">
-          <FormInput label="Category" type="text" value={props.product?.category} />
+          <FormInput
+            label="Category"
+            type="text"
+            value={props.product?.category}
+          />
           <FormInput label="Name" type="text" value={props.product?.name} />
-          <FormInput label="Quantity" type="number" value={props.product?.quantity} />
+          <FormInput
+            label="Quantity"
+            type="number"
+            value={props.product?.quantity}
+          />
           <FormInput label="Price" type="text" value={props.product?.price} />
           <FormTextarea
             label="Description"

@@ -6,12 +6,12 @@ import LoginFormInput from "../LoginFormInput";
 const LoginFormPassword = (props) => {
   const [isPasswordOpen, setPasswordOpen] = useState(false);
   const togglePasswordOpen = () => setPasswordOpen(!isPasswordOpen);
-  
-  const eyeIcon =
-    isPasswordOpen
-    ? <BsEye onClick={togglePasswordOpen} className="password-eye" />
-    : <BsEyeSlashFill onClick={togglePasswordOpen} className="password-eye" />
-    
+
+  const eyeIcon = isPasswordOpen ? (
+    <BsEye onClick={togglePasswordOpen} className="password-eye" />
+  ) : (
+    <BsEyeSlashFill onClick={togglePasswordOpen} className="password-eye" />
+  );
 
   const FormPassword = (
     <div className="form-password-wrapper">
