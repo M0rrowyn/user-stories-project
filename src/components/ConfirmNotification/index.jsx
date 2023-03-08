@@ -8,12 +8,12 @@ import {
   Button,
 } from "@mui/material";
 
-const ConfirmNotification = (props) => {
+const ConfirmNotification = ({ isOpen, setIsOpen }) => {
   return (
     <Dialog
       className="confirm-notification-background"
-      onClose={() => props.setIsOpen(false)}
-      open={props.isOpen}
+      onClose={() => setIsOpen(false)}
+      open={isOpen}
     >
       <DialogContent>
         <Typography className="confirm-notification-title" variant="h6">
@@ -21,7 +21,7 @@ const ConfirmNotification = (props) => {
         </Typography>
       </DialogContent>
       <DialogActions>
-        <Button variant="contained" onClick={() => props.setIsOpen(false)}>
+        <Button variant="contained" onClick={() => setIsOpen(false)}>
           Cancel
         </Button>
         <Button variant="contained" color="error">
