@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
 
-const FormInput = (props) => {
+const FormInput = ({label, type, value}) => {
   return (
     <div>
       <label className="form-input-label" htmlFor="">
-        {props.label}
+        {label}
       </label>
-      <input className="form-input" type={props.type} value={props.value} />
+      <input className="form-input" type={type} value={value} />
     </div>
   );
 };

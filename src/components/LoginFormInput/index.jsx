@@ -1,17 +1,17 @@
 import React from "react";
 import "./style.css";
 
-const LoginFormInput = (props) => {
+const LoginFormInput = ({ classes, type, placeholder}) => {
   let className = "login-form-input";
-  if (props.class) {
-    className += ` ${props.class}`;
+  if (classes) {
+    className += ` ${classes}`;
   }
 
   const Input = (
     <input
-      type={props.type || "text"}
+      type={type || "text"}
       className={className}
-      placeholder={props.placeholder || "default"}
+      placeholder={placeholder || "default"}
     />
   );
 

@@ -21,7 +21,7 @@ const ConfirmNotification = ({ isOpen, setIsOpen }) => {
         </Typography>
       </DialogContent>
       <DialogActions>
-        <Button variant="contained" onClick={() => setIsOpen(false)}>
+        <Button className="confirm-notification-btn" variant="contained" onClick={() => setIsOpen(false)}>
           Cancel
         </Button>
         <Button variant="contained" color="error">

@@ -11,21 +11,21 @@ import { MdClear } from "react-icons/md";
 import FormInput from "../FormInput";
 import FormTextarea from "../FormTextarea";
 
-const ProductModal = (props) => {
+const ProductModal = ({ setIsOpen, isOpen, title, product }) => {
   return (
     <Dialog
       fullWidth={true}
       maxWidth={"sm"}
       className="product-modal"
-      onClose={() => props.setIsOpen(false)}
-      open={props.isOpen}
+      onClose={() => setIsOpen(false)}
+      open={isOpen}
     >
       <DialogTitle>
         <div className="product-modal-title">
-          {props.title}
+          {title}
           <MdClear
             className="product-modal-clear-icon"
-            onClick={() => props.setIsOpen(false)}
+            onClick={() => setIsOpen(false)}
           />
         </div>
       </DialogTitle>
@@ -34,23 +34,23 @@ const ProductModal = (props) => {
           <FormInput
             label="Category"
             type="text"
-            value={props.product?.category}
+            value={product?.category}
           />
-          <FormInput label="Name" type="text" value={props.product?.name} />
+          <FormInput label="Name" type="text" value={product?.name} />
           <FormInput
             label="Quantity"
             type="number"
-            value={props.product?.quantity}
+            value={product?.quantity}
           />
-          <FormInput label="Price" type="text" value={props.product?.price} />
+          <FormInput label="Price" type="text" value={product?.price} />
           <FormTextarea
             label="Description"
-            value={props.product?.description}
+            value={product?.description}
             rows="4"
           />
         </form>
         <DialogActions>
-          <Button variant="contained" onClick={() => props.setIsOpen(false)}>
+          <Button variant="contained" onClick={() => setIsOpen(false)}>
             Cancel
           </Button>
           <Button

@@ -1,21 +1,21 @@
 import React from "react";
 import "./style.css";
 
-const FormTextarea = (props) => {
+const FormTextarea = ({resize, label, value, rows }) => {
   let className = "form-textarea";
-  if (props.resize) {
+  if (resize) {
     className += " form-textarea-resizable";
   }
 
   return (
     <div>
       <label className="form-textarea-label" htmlFor="">
-        {props.label}
+        {label}
       </label>
       <textarea
         className={className}
-        value={props.value}
-        rows={props.rows || 2}
+        value={value}
+        rows={rows || 2}
       />
     </div>
   );
