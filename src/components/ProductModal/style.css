@@ -68,3 +68,11 @@
 .product-modal-form {
   background-color: #D9D9D9;
 }
+
+.product-modal-cancel-button {
+  background-color: #726969 !important;
+}
+
+.product-modal-submit-button {
+  background-color: #44B26F !important;
+}

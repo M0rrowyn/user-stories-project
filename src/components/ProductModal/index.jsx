@@ -50,7 +50,7 @@ const ProductModal = ({ setIsOpen, isOpen, title, product }) => {
           />
         </form>
         <DialogActions>
-          <Button variant="contained" onClick={() => setIsOpen(false)}>
+          <Button  className="product-modal-cancel-button" variant="contained" onClick={() => setIsOpen(false)}>
             Cancel
           </Button>
           <Button
